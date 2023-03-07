@@ -1,0 +1,29 @@
+{
+  "name": "test-ds",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
+    "./index.css": "./lib/index.css"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsup --minify --clean",
+    "start": "tsup --watch"
+  },
+  "dependencies": {
+    "@buildo/bento-design-system": "=0.15.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@vanilla-extract/esbuild-plugin": "^2.2.1",
+    "tsup": "^6.6.3"
+  }
+}
